@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chatapp.RegisterActivity">
+<include
+    android:id="@+id/toolbar"
+    layout="@layout/bar_layout"
+    />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/toolbar">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:gravity="center"
+            android:id="@+id/text"
+            android:textSize="20dp"
+            android:textColor="@color/colorPrimary"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:hint="UserName"
+            android:layout_below="@+id/text"
+            android:padding="16dp"
+            android:layout_marginTop="40dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"
+            android:hint="Email"
+            android:layout_below="@+id/username"
+            android:padding="16dp"
+            android:layout_marginTop="40dp"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Password"
+            android:hint="Password"
+            android:layout_below="@+id/Email"
+            android:padding="16dp"
+            android:layout_marginTop="40dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/register"
+            android:text="Register"
+            android:textSize="20dp"
+            android:layout_marginTop="80dp"
+            android:textColor="#ffffff"
+            android:background="@color/colorPrimaryDark"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
